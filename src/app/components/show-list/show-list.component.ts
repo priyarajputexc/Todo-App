@@ -9,7 +9,6 @@ import { TodoService } from 'src/app/services/todo.service';
 })
 export class ShowListComponent implements OnInit {
   todos: Array<TodoItem>;
-  error: boolean;
 
   constructor(private todoService: TodoService) { }
 
