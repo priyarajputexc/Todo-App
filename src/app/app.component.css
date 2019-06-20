@@ -1,0 +1,17 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(157, 185, 32);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(25, 88, 25);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
