@@ -23,4 +23,16 @@ export class TodoService {
       status: false
     });
   }
+
+  getTodoItemById(id): TodoItem {
+    return this.todos.find(todo => todo.id === id);
+  }
+
+  editTodoItem(todoItem: TodoItem) {
+    this.todos.forEach(todo => {
+      if (todo.id === todoItem.id) {
+        todo.task = todoItem.task;
+      }
+    });
+  }
 }
