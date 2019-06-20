@@ -1,5 +1,5 @@
 <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)">
-    <input type="text" ngModel name="todoItem" required autocomplete="off">
-    <button type="submit" [disabled]="signupForm.invalid">Submit</button>
-    <div *ngIf="error">Task can not be empty</div>
+  <input type="text" ngModel name="todoItem" required autocomplete="off">
+  <button type="submit" [disabled]="signupForm.invalid">Submit</button>
+  <div class="err" *ngIf="error">Task can not be empty</div>
 </form>
