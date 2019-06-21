@@ -2,3 +2,8 @@ li {
   list-style: none;
   margin: 10px;
 }
+
+.deleteButton {
+  background-color: red;
+  margin-right: 20px;
+}

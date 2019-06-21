@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoItem } from 'src/app/models/todo';
 import { TodoService } from 'src/app/services/todo.service';
+import { todoList } from 'src/app/constants/mock-todo-list';
 
 @Component({
   selector: 'app-show-list',
@@ -18,8 +19,9 @@ export class ShowListComponent implements OnInit {
 
   getTodoList() {
     this.todos = this.todoService.getTodoList();
-    console.log(this.todos);
-    
   }
 
+  deleteTodoItem(id) {
+    this.todos = this.todoService.deleteTodoItem(id);
+  }
 }
