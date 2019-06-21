@@ -1,13 +1,14 @@
-<div class="new">
-  <button routerLink="/add-todo">Add New Task</button>
-</div>
 <div class="list">
   <ul>
     <li *ngFor="let todo of todos">
-      <div>{{ todo.id }}</div>
+      <div #del>{{ todo.id }}</div>
       <div>{{ todo.task }}</div>
       <input type="checkbox">
       <button routerLink="/edit-todo/{{todo.id}}">Edit</button>
+      <button class="del" (click)="deleteTodoItem(todo.id)">Delete</button>
     </li>
   </ul>
+  <div class="new">
+    <button routerLink="/add-todo">Add New Task</button>
+  </div>
 </div>

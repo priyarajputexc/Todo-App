@@ -2,3 +2,8 @@ li {
   list-style: none;
   margin: 10px;
 }
+
+.del {
+  background-color: red;
+  margin-right: 20px;
+}
