@@ -8,12 +8,19 @@ import { todoList } from '../constants/mock-todo-list';
 export class TodoService {
   todos: Array<TodoItem>;
 
-  constructor() { 
-    this.todos=todoList;
+  constructor() {
+    this.todos = todoList;
   }
 
-  getTodoList(){
+  getTodoList() {
     return this.todos;
   }
 
+  addTodo(task: string) {
+    this.todos.push({
+      id: this.todos.length + 1,
+      task,
+      status: false
+    });
+  }
 }

@@ -1,3 +1,16 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgba(0, 255, 119, 0), rgb(0, 217, 255));
+  font-size: 20px;
+}
+
+button {
+  background-color: green;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  border: 0px;
+  float: right;
+  width: 20%;
+  font-size: 15px;
 }
