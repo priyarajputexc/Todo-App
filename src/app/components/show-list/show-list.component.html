@@ -5,7 +5,7 @@
       <div>{{ todo.task }}</div>
       <input type="checkbox">
       <button routerLink="/edit-todo/{{todo.id}}">Edit</button>
-      <button class="del" (click)="deleteTodoItem(todo.id)">Delete</button>
+      <button class="deleteButton" (click)="deleteTodoItem(todo.id)">Delete</button>
     </li>
   </ul>
   <div class="new">
