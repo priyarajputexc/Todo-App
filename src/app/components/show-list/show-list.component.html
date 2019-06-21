@@ -1,13 +1,28 @@
-<div class="new">
-  <button routerLink="/add-todo">Add New Task</button>
-</div>
 <div class="list">
+  <app-status-todo (task)="filterTodoList($event)"></app-status-todo>
   <ul>
     <li *ngFor="let todo of todos">
-      <div>{{ todo.id }}</div>
-      <div>{{ todo.task }}</div>
-      <input type="checkbox">
-      <button routerLink="/edit-todo/{{todo.id}}">Edit</button>
+      <div class="serial">{{ todo.id }}</div>
+      <div>
+        <label [class.strikethrough]="todo.status">{{ todo.task }}</label>
+      </div>
+      <div>
+        <input class="checkbox" type="checkbox" [checked]="todo.status"
+          (change)="todo.status = !todo.status; checkRemaining()" />
+      </div>
+      <button class="editButton" routerLink="/edit-todo/{{todo.id}}">Edit</button>
+      <button class="deleteButton" (click)="deleteTodoItem(todo.id)">Delete</button>
     </li>
   </ul>
+</div>
+<div class="new">
+  <button class="addNewButton" routerLink="/add-todo">Add New Task</button>
+</div>
+<div *ngIf="todos">
+  <div class="stats">
+    Remaining : {{ remaining }} / {{todos.length}}
+  </div>
+  <div class="stats">
+    Completed : {{ todos.length-remaining}} / {{todos.length}}
+  </div>
 </div>

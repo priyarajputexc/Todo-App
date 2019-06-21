@@ -35,4 +35,10 @@ export class TodoService {
       }
     });
   }
+
+  deleteTodoItem(id) {
+    this.todos = this.todos.filter(e => e.id != id);
+    return this.todos;
+  }
+  
 }

@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+}
+
+button {
+  padding: 20px;
+  border-radius: 7px;
+  color: white;
+  border: 0px;
+  float: right;
+  width: 40%;
+  font-size: 20px;
+  background-color: #697853;
+  margin-right: 10px;
+}
