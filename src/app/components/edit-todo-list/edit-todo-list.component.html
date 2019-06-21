@@ -1,0 +1,6 @@
+<form *ngIf="todoItem" #editForm="ngForm" (ngSubmit)="onEdit(editForm)" [class.error]="!todoItem.task.trim().length">
+  <!-- [(ngModel)]="model.name" name="name" #name="ngModel" -->
+  <input type="text" [(ngModel)]="todoItem.task" name="todoItem" required autocomplete="off">
+  <button type="submit" [disabled]="editForm.invalid || !todoItem.task.trim().length">Edit</button>
+  <div class="err" *ngIf="error">Task can not be empty</div>
+</form>

@@ -18,6 +18,8 @@ export class ShowListComponent implements OnInit {
 
   getTodoList() {
     this.todos = this.todoService.getTodoList();
+    console.log(this.todos);
+    
   }
 
 }

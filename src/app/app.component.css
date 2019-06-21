@@ -3,13 +3,14 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 15px;
-  background-color: white;
+  background-color: rgba(255,255, 255, .7);
+  margin-top:100px;
 }
 
 .header {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  font-size: 180%;
-  color: rgb(255, 60, 0);
+  font-size: 200%;
+  color: rgb(95, 65, 16);
 }
