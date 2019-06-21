@@ -1,9 +1,69 @@
 li {
   list-style: none;
   margin: 10px;
+  display: flex;
+}
+
+ul {
+  padding: 0px;
+}
+
+.serial {
+  width: 10%;
+}
+
+li>div {
+  width: 20%;
+  text-align: center;
+}
+
+.new {
+  width: 100%;
+}
+
+.checkbox {
+  transform: scale(2);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+button {
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  border: 0px;
+  width: 20%;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.editButton {
+  background-color: #218838;
 }
 
 .deleteButton {
-  background-color: red;
-  margin-right: 20px;
+  background-color: #C82333;
+}
+
+.new {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.addNewButton {
+  width: 100%;
+  background-color: #218838;
+  font-size: 25px;
+}
+
+.stats {
+  background-color: #697853;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 40%;
 }

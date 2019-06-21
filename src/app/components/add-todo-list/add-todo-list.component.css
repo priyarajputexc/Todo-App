@@ -7,6 +7,18 @@
   border-radius: 5px;
 }
 
+button {
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  border: 0px;
+  float: right;
+  width: 20%;
+  font-size: 15px;
+  margin-right: 10px;
+  background-color: #218838;
+}
+
 input {
   border: 1px solid #bdbdbd;
   border-radius: 5px;

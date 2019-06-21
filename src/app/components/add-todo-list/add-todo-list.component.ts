@@ -13,7 +13,7 @@ export class AddTodoListComponent implements OnInit {
   constructor(
     private location: Location,
     private todoService: TodoService
-    ) { }
+  ) { }
 
   ngOnInit() {
   }
@@ -29,7 +29,7 @@ export class AddTodoListComponent implements OnInit {
       setTimeout(() => {
         this.error = false;
         signUpForm.reset();
-      },2000)
+      }, 2000)
     }
   }
 

@@ -9,7 +9,7 @@ export const todoList: Array<TodoItem> = [
     { 
         id: 2,
         task: 'Sleep Again!!',
-        status: false
+        status: true
     },
     { 
         id: 3,
